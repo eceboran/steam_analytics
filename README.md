@@ -22,4 +22,4 @@ This project is a part of the [Becode.org AI Bootcamp](https://becode.org/learn/
 ## Personal situation
 
 This project uses Black: The Uncompromising Code Formatter 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)# steam_analytics
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
