@@ -2,6 +2,8 @@
 Data/Source/*
 # !Data/...
 
+steam-game-analytics/
+
 # ipynb_checkpoints folders
 Code/Data Exploration/.ipynb_checkpoints
 
