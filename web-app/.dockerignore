@@ -1,6 +1,6 @@
 web-app/.idea/
-web-app/__pycache__
-web-app/app/__pycache__
+web-app/__pycache__/
+web-app/app/__pycache__/
 web-app/.flaskenv
 web-app/create_requirements.txt
 web-app/Dockerfile
