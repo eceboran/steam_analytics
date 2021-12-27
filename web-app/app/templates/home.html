@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Top {{no_top_genres}} genres are:</h1>
+	<h1>Most popular genres</h1>
+	<form action="{{url_for('home')}}" method="POST">
+        Number of genres to display: <input type="text" name="no_top_genres">
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Top {{no_top_genres}} genres are:</h2>
     <table>
 		<thead>
 			<th>Genre</th>

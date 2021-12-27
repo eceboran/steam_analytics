@@ -1,25 +1,8 @@
 # Steam Analystics
 
 ## Description
- 
+The most popular genres in Steam are analyzed.
 This project is a part of the [Becode.org AI Bootcamp](https://becode.org/learn/ai-bootcamp/) program.
-
-
-## Installation
  
 ## Usage
- 
-
-
-## Visuals
- 
-## Steps
- 
-## Architecture
- 
-## Limitations
- 
-## Personal situation
-
-This project uses Black: The Uncompromising Code Formatter 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+Visit the website [Steam Game Analytics](https://steam-game-analytics.herokuapp.com/)

@@ -11,15 +11,19 @@ import json
 # Path of the current directory
 current_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
+    if request.method == 'POST':
+        no_top_genres = request.form["no_top_genres"]
+    elif request.method == 'GET':
+        no_top_genres = 12
+
     # Create/connect to the database file
     file_name = "Games.db"
     conn = sqlite3.connect(os.path.join(current_directory, file_name))
     cursor = conn.cursor()
-
     # Top genres
-    no_top_genres = 12
+    # no_top_genres = 12
     sql_query = sql_query = f"""SELECT genre, COUNT(genre) as genre_count
     FROM(
     SELECT gms.steam_appid, gnr.genre, gms_gnr.genre_id, gms.total_reviews, gms.price_initial

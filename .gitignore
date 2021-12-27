@@ -1,5 +1,6 @@
 # Data files
-Data/Source/*
+Data/Source/
+
 # !Data/...
 
 # web-app/
