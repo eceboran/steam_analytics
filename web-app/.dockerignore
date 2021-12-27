@@ -4,3 +4,6 @@ web-app/app/__pycache__/
 web-app/.flaskenv
 web-app/create_requirements.txt
 web-app/Dockerfile
+web-app/environment.yml
+web-app/requirements_pip.txt
+
