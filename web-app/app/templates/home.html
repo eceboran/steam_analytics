@@ -17,13 +17,19 @@
 			<td>{{game[0]}}</td>
 			<td>{{game[1]}}</td>
 		</tbody>
-
-		<div id="pie-chart"></div>
+		{% endfor%}
+	</table>
+	<div id="pie-chart"></div>
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 		<script>
 			var graph1 = {{ graph1JSON | safe}}
 			Plotly.plot("pie-chart", graph1, {})
 		</script>
-		{% endfor%}
-	</table>
+
+	<div id="violin"></div>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script>
+			var graph1 = {{ graph2JSON | safe}}
+			Plotly.plot("violin", graph1, {})
+		</script>
 {% endblock %}
