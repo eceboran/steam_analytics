@@ -46,7 +46,7 @@ def home():
 
     graph1JSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
-    sql_query = """SELECT gms.steam_appid, gnr.genre, gms_gnr.genre_id, gms.total_reviews, gms.price_initial, gms.review_score
+    sql_query = f"""SELECT gms.steam_appid, gnr.genre, gms_gnr.genre_id, gms.total_reviews, gms.price_initial, gms.review_score
     FROM
     games gms
     JOIN GamesGenresRelation gms_gnr ON gms.steam_appid = gms_gnr.steam_appid
@@ -61,7 +61,7 @@ def home():
     JOIN genres gnr ON gnr.genre_id = gms_gnr.genre_id)
     GROUP BY genre
     ORDER BY COUNT(genre) DESC
-    LIMIT 10)
+    LIMIT {no_top_genres})
     """
     cursor.execute(sql_query)
     result = cursor.fetchall()
